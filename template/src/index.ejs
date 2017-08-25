@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试react页面</title>
+    <script src="https://dn-mhc.qbox.me/mhc_fe_app/hd-solution.js"></script>
+    <script src="https://dn-mhc.qbox.me/faw-liberate/common/fastclick.js"></script>
+    <script src="https://dn-mhc.qbox.me/faw/js/browser-polyfill.min.js"></script>
+    <style>
+        .spinner {
+            width: .7rem;
+            height: .7rem;
+            position: relative;
+            margin: 2rem auto;
+        }
+        .double-bounce1,.double-bounce2{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #FF8903;
+            opacity: 0.6;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,0,0);
+            -webkit-transform: translate(-50%,0,0);
+            left: 0;
+            -webkit-animation: bounce 2.0s infinite ease-in-out;
+            animation: bounce 2.0s infinite ease-in-out;
+        }
+        .double-bounce2 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+        @-webkit-keyframes bounce {
+            0%, 100% { -webkit-transform: scale(0.0) }
+            50% { -webkit-transform: scale(1.0) }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: scale(0.0);
+                -webkit-transform: scale(0.0);
+            } 50% {
+                transform: scale(1.0);
+                -webkit-transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <script src="https://dn-mhc.qbox.me/faw/js/react.min.js"></script>
+    <script src="https://dn-mhc.qbox.me/faw/js/react-dom.min.js"></script>
+</body>
+</html>

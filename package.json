@@ -1,0 +1,31 @@
+{
+  "name": "rcsubmarine",
+  "bin": {
+    "rcsubmarine": "index.js"
+  },
+  "version": "0.0.2",
+  "description": "setup a react program quickly",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouzefei/rcsubmarine.git"
+  },
+  "keywords": [
+    "react",
+    "cli"
+  ],
+  "author": "qingtian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouzefei/rcsubmarine/issues"
+  },
+  "homepage": "https://github.com/zhouzefei/rcsubmarine#readme",
+  "dependencies": {
+    "commander": "^2.11.0"
+  },
+  "devDependencies": {
+    "chalk": "^2.1.0"
+  }
+}
